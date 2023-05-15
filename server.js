@@ -15,7 +15,7 @@ const hbs = exphbs.create({ helpers });
 const sess = {
     secret: 'shh its a secret',
     cookie: {
-      maxAge: 300000,
+      maxAge: 900,
       httpOnly: true,
       secure: false,
       sameSite: 'strict',
@@ -34,6 +34,6 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(routes);
 
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`));
 });
