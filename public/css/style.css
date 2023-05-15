@@ -1,0 +1,58 @@
+:root {
+    --fontgroup: 'Times New Roman', sans-serif;
+    --border: 2px solid red;
+    --fontcolor: black;
+
+}
+
+
+.menu{
+    font-family: var(--fontgroup);
+    color: red;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between; 
+    background-color: silver;
+    border: var(--border);
+    font-family: var(--fontgroup);
+    color: var(--fontcolor);
+
+} 
+
+.new-post-btn {
+    background-color: silver;
+    color: red;
+    font-size: 30px;
+    margin: 10% 0;
+  }
+
+  a {
+    color: red;
+    margin: 5px;
+  }
+
+  .new-post {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .each-post {
+    text-align: center;
+  }
+
+  .btn.btn-primary {
+    background-color: red;
+  }
+  
+  .new-post-form {
+    padding: 18px;
+  }
+  
+  .submit-comment {
+    margin: 10px;
+  }
